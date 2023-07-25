@@ -4,7 +4,7 @@ import chess.svg
 import cairosvg
 import subprocess
 import requests
-#a somewhat janky chess viewer
+# A somewhat janky chess viewer
 
 a = int(480)
 b = int(480)
