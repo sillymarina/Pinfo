@@ -7,11 +7,11 @@ import time
 req = requests.get("https://data.buienradar.nl/2.0/feed/json")
 data = req.json()
 print(data)
-print(data['actual']['stationmeasurements'][19]['temperature'])
-temp = data['actual']['stationmeasurements'][19]['temperature']
-cur = data['actual']['stationmeasurements'][19]['weatherdescription']
-times = data['actual']['stationmeasurements'][19]['timestamp']
-icon = data['actual']['stationmeasurements'][19]['iconurl']
+print(data['actual']['stationmeasurements'][25]['temperature'])
+temp = data['actual']['stationmeasurements'][25]['temperature']
+cur = data['actual']['stationmeasurements'][25]['weatherdescription']
+times = data['actual']['stationmeasurements'][25]['timestamp']
+icon = data['actual']['stationmeasurements'][25]['iconurl']
 requests.get(icon)
 # Get all the weather data into variables
 ## filename = "icon_image.jpg"
