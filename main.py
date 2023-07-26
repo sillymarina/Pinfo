@@ -12,7 +12,7 @@ import PySimpleGUIWeb as sg
 print("Hello world")
 
 yes = 0
-layout = [[sg.Button('1'), sg.Button('2')]]
+layout = [[sg.Button('0', size=(10, 3)), sg.Button('1', size=(10, 3)), sg.Button('2',size=(10, 3))]]
 window = sg.Window('Pinfo', layout, web_port=1234)
 
 
@@ -27,9 +27,12 @@ while yes == 0: # This should be on always
         if event == '2':
             print("2") 
             CurrentApp =2
+        if event == '0':
+            print("0") 
+            CurrentApp =0
 
         if Selected == 0: # This is used to terminate the other module if a new one is selected
-            print("0")
+            print("Nothing yet")
         elif Selected == 1 and CurrentApp != 1:
             weather.terminate()
             Selected = 0
