@@ -3,6 +3,7 @@ import PySimpleGUI as sg
 import time
 #from flask import Flask
 import subprocess
+import PySimpleGUIWeb
 
 # a small project to display different information selected via a webui ment for a raspberry pi with only a screen
 # also ment to easily add more .py files
