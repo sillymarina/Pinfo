@@ -13,7 +13,7 @@ cur = data['actual']['stationmeasurements'][25]['weatherdescription']
 times = data['actual']['stationmeasurements'][25]['timestamp']
 icon = data['actual']['stationmeasurements'][25]['iconurl']
 requests.get(icon)
-# Get all the weather data into variables
+# Get all the weather data into variables.
 ## filename = "icon_image.jpg"
 
 ## with open(filename, 'wb') as f:
